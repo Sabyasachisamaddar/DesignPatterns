@@ -18,6 +18,7 @@ namespace PatternsGuide
                 Console.WriteLine("4. Prototype Pattern");
                 Console.WriteLine("5. Singleton Pattern");
                 Console.WriteLine("6. Adapter Pattern");
+                Console.WriteLine("7. Bridge Pattern");
                 Console.WriteLine("-----------------------------------------------");
                 Console.WriteLine("Press the appropriate number to check the pattern");
                 selection = Int32.Parse(Console.ReadLine());
@@ -64,6 +65,13 @@ namespace PatternsGuide
                         Console.WriteLine("----------------------------------");
                         var adapterPattern = new AdapterPattern.AdapterPattern();
                         adapterPattern.ImplementPattern();
+                        Console.WriteLine("-----------------------------------");
+                        break;
+                    case 7:
+                        Console.WriteLine("Running Bridge Pattern");
+                        Console.WriteLine("----------------------------------");
+                        var bridgePattern = new BridgePattern.BridgePattern();
+                        bridgePattern.ImplementPattern();
                         Console.WriteLine("-----------------------------------");
                         break;
                     default:
