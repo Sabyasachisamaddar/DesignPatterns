@@ -17,6 +17,7 @@ namespace PatternsGuide
                 Console.WriteLine("3. FactoryPattern");
                 Console.WriteLine("4. Prototype Pattern");
                 Console.WriteLine("5. Singleton Pattern");
+                Console.WriteLine("6. Adapter Pattern");
                 Console.WriteLine("-----------------------------------------------");
                 Console.WriteLine("Press the appropriate number to check the pattern");
                 selection = Int32.Parse(Console.ReadLine());
@@ -52,10 +53,17 @@ namespace PatternsGuide
                         Console.WriteLine("-----------------------------------");
                         break;
                     case 5:
-                        Console.WriteLine("Running Sibgleton Pattern");
+                        Console.WriteLine("Running Singleton Pattern");
                         Console.WriteLine("----------------------------------");
                         var singletonPattern = new SingletonPattern.SingletonPattern();
                         singletonPattern.ImplementPattern();
+                        Console.WriteLine("-----------------------------------");
+                        break;
+                    case 6:
+                        Console.WriteLine("Running Adapter Pattern");
+                        Console.WriteLine("----------------------------------");
+                        var adapterPattern = new AdapterPattern.AdapterPattern();
+                        adapterPattern.ImplementPattern();
                         Console.WriteLine("-----------------------------------");
                         break;
                     default:
